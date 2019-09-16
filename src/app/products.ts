@@ -9,7 +9,7 @@ export const products = [
     name: 'Churrasco',
     price: 16,
     description: 'Carne de contra-file, ...',
-    obs: ''
+    obs: 'teste churras'
   },
   {
     name: 'Bauru',

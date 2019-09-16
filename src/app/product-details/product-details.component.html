@@ -4,6 +4,10 @@
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-
+  <p>
+    <input id="obs" name="obs" class="form-control" ng-model="product.obs">
+  </p>
   <button (click)="addToCart(product)">Adicionar</button>
+  &nbsp;
+  <button style="cancel-button" (click)="addToCart(product)">Cancelar</button>
 </div>

@@ -12,7 +12,7 @@
     Descrição: {{ product.description }}
   </p>
 
-  <button (click)="share()">
+  <button [routerLink]="['/products', productId]">
     Selecionar
   </button>
 
