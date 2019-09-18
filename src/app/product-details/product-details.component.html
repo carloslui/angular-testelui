@@ -1,12 +1,11 @@
 <h2>Detalhe</h2>
 
 <div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
+  <h3>{{ product.name }} - R$ {{ product.price}}</h3>  
+  <p>{{ product.description }}</p>  
   <p>
-    <input id="obs" name="obs" class="form-control" ng-model="product.obs">
-  </p>
+    <input id="obs" name="obs" placeholder="Informe as alterações">
+  </p>  
   <button (click)="addToCart(product)">Adicionar</button>
   &nbsp;
   <button style="cancel-button" (click)="addToCart(product)">Cancelar</button>
